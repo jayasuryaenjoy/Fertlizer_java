@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Address</title>
+<script src="script.js"></script>
+</head>
+<style>
+body {
+	margin: 0px;
+}
+
+.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: steelblue;
+	color: white;
+}
+.topnav-right{
+float:right;
+}
+</style>
+	
+
+
+<body style="height: 100%;background:url(Images/Address.jpg) no-repeat center fixed;-webkit-background-size: cover;background-size: cover;">
+<div class="topnav">
+		<a  href="index.html">Home</a>
+		<a href="ContactUs.html">Contact Us</a> 
+		<a href="AboutUs.html">About Us</a>
+		<div class="topnav-right">
+			<a href="index.html">Logout</a> 
+</div>
+
+	</div>
+	<form action="Adress">
+<center>
+<h1 style="color:   #4d0026
+ 
+
+;">Please fill the details to reach your order at your door steps</h1>
+<br>
+<h2>
+<table>
+<h3 style="color:
+;">Address</h3>
+<tr>
+<td> Name</td>
+<td><input type="text" placeholder="Enter Name" name="name" required></td>
+</tr><br>
+<tr>
+<td> House number</td>
+<td><input type="text" placeholder="Enter H.No" name="H_no" required></td>
+</tr>
+<tr>
+<td> Area</td>
+<td><input type="text" placeholder="Enter Area" name="street" required></td>
+</tr>
+<tr>
+<td> City</td>
+<td><input type="text" placeholder="Enter City " name="city" required></td>
+</tr>
+<tr>
+<td> State</td>
+<td><input type="text" placeholder="Enter State" name="state" required></td>
+</tr>
+<tr>
+<td> Pincode</td>
+<td><input type="number" placeholder="Enter Pincode" name="pincode" required></td>
+</tr>
+<tr>
+<td> Phone no</td>
+<td>
+<input type="number" id="MobileNo" name="MobileNo" onfocusout="mobileNumber(this.value)" placeholder="MobileNo" required >
+<span id="mobileNumberError"></span>
+</td>
+</tr>
+
+
+
+</table>
+</h4>
+<input type="reset"  value="Reset">&emsp;&emsp;
+<input type="submit"   value="Confirm">
+</form>
+</center>
+</body>
+</html>
